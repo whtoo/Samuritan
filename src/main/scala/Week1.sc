@@ -37,7 +37,12 @@ def cacLab(amount:Int,kds:Int) : Int @tailrec ={
 }
 cacLab(100,5)
 
+def f(n:Int) : Int @tailrec = {
+  if( n < 3) n
+  else f(n-1) + 2 * f(n-2) + 3 * f(n-3)
+}
 
+f(5)
 
 
 
